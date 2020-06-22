@@ -1,0 +1,12 @@
+//新增路由
+  {path: '/customer/authentication', name: 'authentication', component: '/customer/authentication'},//实名认证申请
+  {path: '/customer/questions', name: 'questions', component: '/customer/questions'},//评测试题
+  {path: '/customer/evaluation', name: 'evaluation', component: '/customer/evaluation'},//评测结果
+  {path: '/customer/evaluationNo', name: 'evaluationNo', component: '/customer/evaluationNo'},//风险评测
+  {path: '/customer/asset', name: 'asset', component: '/customer/asset'},//资产证明
+  {path: '/customer/selectCustomer', name: 'selectCustomer', component: '/customer/selectCustomer'},//选择客户
+
+
+选择客户的事件在
+/customer/common/scrollList.vue
+methods中，写的有注释，具体选择客户后的逻辑在这里添加即可

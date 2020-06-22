@@ -1,0 +1,379 @@
+
+body {
+  // font-family: PingFang-SC-Medium, -apple-system, BlinkMacSystemFont, "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  font-family: -apple-system, PingFangSC-Regular, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.PFSC-Medium-Bold {
+  font-family: PingFangSC-Medium;
+  font-weight: 600;
+}
+.PFSC-Medium {
+  font-family: PingFangSC-Medium;
+}
+.PFSC-Light {
+  font-family: PingFangSC-Light;
+}
+
+@font-face {
+  font-family: "UDC-Bold";
+  src: url("https://storage.360buyimg.com/jr-assets/mobile/base/fonts/UDC-Bold.otf");
+}
+
+@font-face {
+  font-family: "UDC-light";
+  src: url("https://storage.360buyimg.com/jr-assets/mobile/base/fonts/UDC-light.otf");
+}
+
+@font-face {
+  font-family: "UDC-Mediun";
+  src: url("https://storage.360buyimg.com/jr-assets/mobile/base/fonts/UDC-Mediun.otf");
+}
+
+.UDC-Bold {
+  font-family: "UDC-Bold" !important;
+  font-weight: bold !important;
+}
+
+.UDC-light {
+  font-family: "UDC-light" !important;
+  font-weight: normal !important;
+}
+
+.UDC-Mediun {
+  font-family: "UDC-Mediun" !important;
+  font-weight: normal !important;
+}
+.transition(@params: 0.4s) {
+  transition: all @params;
+}
+
+.scale(@params: 1) {
+  transform: scale(@params);
+}
+
+.rotate(@params: 90deg) {
+  transform: rotate(@params);
+}
+
+.radius(@param: 4px) {
+  border-radius: @param;
+}
+* {
+  box-sizing: border-box;
+  touch-action: pan-y;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .fz(12);
+}
+
+body {
+  margin: 0 auto;
+  background: @bodyBg;
+  .fz(12);
+  color: @black;
+}
+
+p, ul, li, em, i, u {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  .transition;
+}
+input::-webkit-search-cancel-button{
+  display: none;
+}
+input[type=search]::-ms-clear{
+  display: none;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cl {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.fb {
+  font-weight: bold;
+}
+
+.fn {
+  font-weight: normal;
+}
+.flexS{
+  display: flex;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.fwrap {
+flex-wrap: wrap;
+}
+.flex1 {
+  flex: 1;
+}
+.jcc {
+  justify-content: center;
+}
+.fx-auto {
+  flex: auto;
+}
+
+.inlineFlex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.textLeft() {
+  text-align: left;
+}
+
+.textRight() {
+  text-align: right;
+}
+
+.textCenter() {
+  text-align: center;
+}
+
+.text-left {
+  .textLeft;
+}
+
+.text-right {
+  .textRight;
+}
+
+.text-center {
+  .textCenter;
+}
+.vab {
+  vertical-align:bottom;
+}
+.vam {
+  vertical-align:middle;
+}
+.fw400{
+  .fw400
+}
+.C000 {
+  color:#000000;
+}
+
+.Cfff {
+  color:#ffffff;
+}
+.C333{
+  color:#333333;
+}
+.C666{
+  color:#666666;
+}
+.C666P70{
+  color:rgba(102, 102, 102, 0.7);
+}
+.C999{
+  color:#999999;
+}
+.Cccc {
+  color: #cccccc;
+}
+.CEB5954{
+  color:#EB5954;
+}
+.CDA76E{
+  color:#CDA76E
+}
+.Cccc {
+  color: @ccc;
+}
+.Cgreen {
+  color: @green
+}
+.C606266 {
+  color: #606266
+}
+.C4D7BFE {
+  color:#4D7BFE
+}
+.textBlue {
+  color: @textBlue
+}
+.priceRed {
+  color: @priceRed
+}
+.btnBg {
+  background-color: @btnBg;
+}
+.bag999 {
+  background-color: @999;
+}
+.bagFafafa {
+  background-color: @fafa;
+}
+.bagF1f2f3 {
+  background-color: #F1F2F3;
+}
+.fw500{
+  font-weight: 500;
+}
+.fw300{
+  font-weight: 300;
+}
+.fw600 {
+  font-weight: 600;
+}
+.opacity(@params: 0.8) {
+  opacity: @params;
+}
+.whiteBg{
+  background-color: white;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 0s ease;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.line {
+  height: 1px;
+  background: @grayBg;
+}
+
+.gradualBackground(@params1, @params2, @direction: right) {
+  background: linear-gradient(to @direction, @params1, @params2);
+}
+.lightGrey{
+  color:@999;
+}
+
+.vux-popup-dialog {
+  background: @grayBg !important;
+}
+
+.cellChild {
+  margin-left: 10px
+}
+.rightRow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #999999;
+  border-right: 1px solid #999999;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+}
+.bLine:after {
+  content: '';
+  width: calc( ~ '100% - 30px');
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  display: block;
+  border-top: 1px solid @grayBg;
+}
+.radius10{
+  .radius(10px)
+}
+.radius50P{
+  border-radius: 50%;
+}
+.radius4{
+  .radius(4px)
+}
+.greyLine{
+  border: 1px solid #999999;
+}
+.d-i-block{
+  display: inline-block;
+}
+.spot{
+  color: #99A0AE;
+}
+.spot:before{
+  content:'';
+  display: inline-block;
+  margin-right: 6px;
+  width: 7px;
+  height: 7px;
+}
+.x-fixed-bottom-bar {
+  padding-bottom: constant(safe-area-inset-bottom)!important;
+  padding-bottom: env(safe-area-inset-bottom)!important
+}
+
+.x-fixed-bottom-bar-inner {
+  bottom: constant(safe-area-inset-bottom)!important;
+  bottom: env(safe-area-inset-bottom)!important
+}
+
+.x-fixed-bottom-bar-inner:after {
+  position: fixed;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: constant(safe-area-inset-bottom)!important;
+  height: env(safe-area-inset-bottom)!important;
+  width: 100%;
+  z-index: 90;
+  background-color: #fff
+}
