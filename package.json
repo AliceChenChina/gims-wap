@@ -12,7 +12,7 @@
     "deploy": "node build/build.js && bash rsyncGims.sh"
   },
   "dependencies": {
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "awe-dnd": "^0.3.2",
     "axios": "^0.18.0",
     "better-scroll": "^1.13.2",
